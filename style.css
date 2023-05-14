@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: hsl(233, 47%, 7%);
+  min-height: 100vh;
+  display: flex;
+  font-size: 15px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  max-width: 1115px;
+  margin: 0 auto;
+}
+.container {
+  background-color: hsl(244, 38%, 16%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 15px;
+  margin: 2rem;
+  overflow: hidden;
+}
+.img-container {
+  position: relative;
+}
+.img-container img {
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(277, 64%, 61%, 0.5);
+}
+.text-container {
+  padding: 15%;
+}
+.title {
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+.title span {
+  color: hsl(277, 64%, 61%);
+}
+.sub-title {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 25px;
+  font-size: 12px;
+}
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.plan div h2 {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.plan div p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: white;
+}
+@media (max-width: 425px) {
+  body {
+    text-align: center;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .img-container {
+    order: -1;
+  }
+  .text-container {
+    padding: 10%;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .sub-title {
+    font-size: 14px;
+  }
+  .plan {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  .plan div {
+    margin-top: 30px;
+  }
+}
